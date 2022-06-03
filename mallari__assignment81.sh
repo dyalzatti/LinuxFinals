@@ -2,6 +2,9 @@ systemctl stop httpd
 
 vi lamp.sh
 
+# to insert
+esc i
+
 #!/bin/sh
 
 # install httpd
@@ -52,3 +55,8 @@ mysql_secure_installation
 systemctl enable mariadb
 
 mysql -u root -p
+
+# save
+esc :wq!
+
+chmod +x lamp.sh
